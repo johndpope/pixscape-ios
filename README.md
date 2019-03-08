@@ -6,3 +6,7 @@ Your phone's GPS is not accurate enough. When used in a middle of skyscrapers an
 Pixscape allows you to get an accurate and high precision position by scanning your surroundings using your device's camera.
 
 The areas recognizable by Pixscape are currently limited to certain areas of London.
+
+![Alt text](Screenshots/iphone2.png?raw=true "Pixscape in action")
+
+![Alt text](Screenshots/iphone3.png?raw=true "Pixscape in action")
