@@ -7,6 +7,6 @@ Pixscape allows you to get an accurate and high precision position by scanning y
 
 The areas recognizable by Pixscape are currently limited to certain areas of London.
 
-![Alt text](Screenshots/iphone2.png?raw=true "Pixscape in action")
+![Pixscape in action](Screenshots/iphone2.PNG?raw=true "Pixscape in action")
 
-![Alt text](Screenshots/iphone3.png?raw=true "Pixscape in action")
+![Pixscape in action](Screenshots/iphone3.PNG?raw=true "Pixscape in action")
