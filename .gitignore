@@ -1,0 +1,78 @@
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.lib
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Libraries
+*.lib
+*.la
+*.lo
+
+# Debug files
+*.su
+*.idb
+
+# Kernel Module Compile Results
+*.cmd
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+Build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xcuserstate
+
+# Intellij
+*.iml
+.idea/workspace.xml
+.idea/libraries
+
+# Keystore files
+*.jks
+Index
+AppStore/Pixscape 2018-06-06 13-14-11/DistributionSummary.plist
+AppStore/Pixscape 2018-06-06 13-14-11/ExportOptions.plist
+AppStore/Pixscape 2018-06-06 13-14-11/Packaging.log
+AppStore/Pixscape 2018-06-06 13-14-11/Pixscape.ipa

@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		250D2F432049709C00AACC49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D2F422049709C00AACC49 /* AppDelegate.swift */; };
+		250D2F452049709C00AACC49 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D2F442049709C00AACC49 /* ARViewController.swift */; };
+		250D2F4A2049709C00AACC49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250D2F492049709C00AACC49 /* Assets.xcassets */; };
+		250D2F4D2049709C00AACC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250D2F4B2049709C00AACC49 /* LaunchScreen.storyboard */; };
+		25223FC120BD706900A4839D /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FC020BD706900A4839D /* SwiftSpinner.swift */; };
+		25223FE420BD967100A4839D /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FD720BD967100A4839D /* JJFloatingActionButton+Animation.swift */; };
+		25223FE520BD967100A4839D /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FD820BD967100A4839D /* UIView+JJFloatingActionButton.swift */; };
+		25223FE620BD967100A4839D /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FD920BD967100A4839D /* JJFloatingActionButtonDelegate.swift */; };
+		25223FE720BD967100A4839D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDA20BD967100A4839D /* Styles.swift */; };
+		25223FE820BD967100A4839D /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDB20BD967100A4839D /* AnimationConfiguration.swift */; };
+		25223FE920BD967100A4839D /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDC20BD967100A4839D /* JJActionItem.swift */; };
+		25223FEA20BD967100A4839D /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDD20BD967100A4839D /* JJFloatingActionButtonState.swift */; };
+		25223FEB20BD967100A4839D /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDE20BD967100A4839D /* JJActionItemTitlePosition.swift */; };
+		25223FEC20BD967100A4839D /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDF20BD967100A4839D /* UIColor+JJFloatingActionButton.swift */; };
+		25223FED20BD967100A4839D /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE020BD967100A4839D /* JJFloatingActionButton+Placement.swift */; };
+		25223FEE20BD967100A4839D /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE120BD967100A4839D /* LayerProperties.swift */; };
+		25223FEF20BD967100A4839D /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE220BD967100A4839D /* JJFloatingActionButton.swift */; };
+		25223FF020BD967100A4839D /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE320BD967100A4839D /* JJCircleView.swift */; };
+		25223FF320BEAA5D00A4839D /* GeoWayPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FF220BEAA5D00A4839D /* GeoWayPoint.swift */; };
+		25223FFE20BEDFEE00A4839D /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FFD20BEDFEE00A4839D /* TermsViewController.swift */; };
+		2522400020BEE13300A4839D /* ScapePrivacy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 25223FFF20BEE13300A4839D /* ScapePrivacy.pdf */; };
+		2522400920BEEC9400A4839D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522400820BEEC9400A4839D /* UIView+Extension.swift */; };
+		2532B10C206D681200ED5840 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2532B10B206D681200ED5840 /* CoreLocation.framework */; };
+		2532B10E206D681700ED5840 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2532B10D206D681700ED5840 /* CoreMotion.framework */; };
+		2536AE9E216CAFE70029A6F6 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2536AE9D216CAFE70029A6F6 /* SceneKit.framework */; };
+		2536AEA0216CAFF10029A6F6 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2536AE9F216CAFF10029A6F6 /* ARKit.framework */; };
+		2536AED4217490CD0029A6F6 /* CompassPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AED3217490CD0029A6F6 /* CompassPoints.swift */; };
+		2536AED5217490CD0029A6F6 /* CompassPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AED3217490CD0029A6F6 /* CompassPoints.swift */; };
+		2536AEE12174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE02174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift */; };
+		2536AEE22174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE02174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift */; };
+		2536AEE42174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE32174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift */; };
+		2536AEE52174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE32174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift */; };
+		2536AEE72174D83F0029A6F6 /* ARViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE62174D83F0029A6F6 /* ARViewController+Setup.swift */; };
+		2536AEE82174D83F0029A6F6 /* ARViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE62174D83F0029A6F6 /* ARViewController+Setup.swift */; };
+		2544098920C827D5008296A2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544098820C827D5008296A2 /* Device.swift */; };
+		2544098A20C827D5008296A2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544098820C827D5008296A2 /* Device.swift */; };
+		2565D23820C710530018F4BD /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF520BEC89100A4839D /* Fabric.framework */; };
+		2565D23920C710670018F4BD /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF420BEC89100A4839D /* Crashlytics.framework */; };
+		2568E7A320C69A1D009135EB /* PinCodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A220C69A1D009135EB /* PinCodeField.swift */; };
+		2568E7A520C69A51009135EB /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A420C69A51009135EB /* PinViewController.swift */; };
+		2568E7A720C6AAE4009135EB /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A620C6AAE4009135EB /* AppUtils.swift */; };
+		2568E7BC20C6C081009135EB /* Flyover+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7AF20C6C081009135EB /* Flyover+Operators.swift */; };
+		2568E7BD20C6C081009135EB /* FlyoverCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B120C6C081009135EB /* FlyoverCamera.swift */; };
+		2568E7BE20C6C081009135EB /* FlyoverCamera+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B220C6C081009135EB /* FlyoverCamera+State.swift */; };
+		2568E7BF20C6C081009135EB /* FlyoverCamera+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B320C6C081009135EB /* FlyoverCamera+Configuration.swift */; };
+		2568E7C020C6C081009135EB /* FlyoverCamera+RegionChangeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B420C6C081009135EB /* FlyoverCamera+RegionChangeAnimation.swift */; };
+		2568E7C120C6C081009135EB /* Flyover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B520C6C081009135EB /* Flyover.swift */; };
+		2568E7C220C6C081009135EB /* FlyoverAwesomePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B720C6C081009135EB /* FlyoverAwesomePlace.swift */; };
+		2568E7C320C6C081009135EB /* FlyoverMapView+MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B920C6C081009135EB /* FlyoverMapView+MapType.swift */; };
+		2568E7C420C6C081009135EB /* FlyoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7BA20C6C081009135EB /* FlyoverMapViewController.swift */; };
+		2568E7C520C6C081009135EB /* FlyoverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7BB20C6C081009135EB /* FlyoverMapView.swift */; };
+		2568E7C720C6D018009135EB /* BetterSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7C620C6D017009135EB /* BetterSegmentedControl.swift */; };
+		2568E7C920C6D0D1009135EB /* BetterSegmentedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7C820C6D0D1009135EB /* BetterSegmentedOptions.swift */; };
+		25A6D686216BA5C50024F8C7 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6D685216BA5C50024F8C7 /* CGRect+Extensions.swift */; };
+		25A6D687216BA5C50024F8C7 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6D685216BA5C50024F8C7 /* CGRect+Extensions.swift */; };
+		25B9AE622088D5C300727E4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9AE612088D5C300727E4C /* CoreGraphics.framework */; };
+		25B9DF6A20C817C10068FEC5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728F620975FC30062B2A0 /* MapViewController.swift */; };
+		25B9DF6B20C817C10068FEC5 /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C22097496B0062B2A0 /* NeonGroupable.swift */; };
+		25B9DF6C20C817C10068FEC5 /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDE20BD967100A4839D /* JJActionItemTitlePosition.swift */; };
+		25B9DF6D20C817C10068FEC5 /* PAPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3373F20C037100098C0BD /* PAPermissionsView.swift */; };
+		25B9DF6E20C817C10068FEC5 /* ScapeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376E20C148C80098C0BD /* ScapeState.swift */; };
+		25B9DF6F20C817C10068FEC5 /* UIViewRadial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E7209753CE0062B2A0 /* UIViewRadial.swift */; };
+		25B9DF7120C817C10068FEC5 /* PAPermissionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3373E20C037100098C0BD /* PAPermissionsTableViewCell.swift */; };
+		25B9DF7220C817C10068FEC5 /* PALocationPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375120C037AA0098C0BD /* PALocationPermissionsCheck.swift */; };
+		25B9DF7320C817C10068FEC5 /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C52097496B0062B2A0 /* NeonExtensions.swift */; };
+		25B9DF7420C817C10068FEC5 /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FD920BD967100A4839D /* JJFloatingActionButtonDelegate.swift */; };
+		25B9DF7520C817C10068FEC5 /* GeoWayPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FF220BEAA5D00A4839D /* GeoWayPoint.swift */; };
+		25B9DF7620C817C10068FEC5 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A620C6AAE4009135EB /* AppUtils.swift */; };
+		25B9DF7720C817C10068FEC5 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FC020BD706900A4839D /* SwiftSpinner.swift */; };
+		25B9DF7820C817C10068FEC5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D2F442049709C00AACC49 /* ARViewController.swift */; };
+		25B9DF7920C817C10068FEC5 /* FlyoverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7BB20C6C081009135EB /* FlyoverMapView.swift */; };
+		25B9DF7A20C817C10068FEC5 /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE020BD967100A4839D /* JJFloatingActionButton+Placement.swift */; };
+		25B9DF7B20C817C10068FEC5 /* FlyoverMapView+MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B920C6C081009135EB /* FlyoverMapView+MapType.swift */; };
+		25B9DF7C20C817C10068FEC5 /* RevealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728EA209753CE0062B2A0 /* RevealType.swift */; };
+		25B9DF7D20C817C10068FEC5 /* PAConstraintsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375720C037AA0098C0BD /* PAConstraintsUtils.swift */; };
+		25B9DF7F20C817C10068FEC5 /* BetterSegmentedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7C820C6D0D1009135EB /* BetterSegmentedOptions.swift */; };
+		25B9DF8020C817C10068FEC5 /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE120BD967100A4839D /* LayerProperties.swift */; };
+		25B9DF8120C817C10068FEC5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728CD20974BE60062B2A0 /* UIColor+Extension.swift */; };
+		25B9DF8220C817C10068FEC5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D7291420986A300062B2A0 /* UIViewController+Extension.swift */; };
+		25B9DF8320C817C10068FEC5 /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FD720BD967100A4839D /* JJFloatingActionButton+Animation.swift */; };
+		25B9DF8420C817C10068FEC5 /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3373220C02DF10098C0BD /* PermissionsViewController.swift */; };
+		25B9DF8520C817C10068FEC5 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FFD20BEDFEE00A4839D /* TermsViewController.swift */; };
+		25B9DF8620C817C10068FEC5 /* FlyoverCamera+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B220C6C081009135EB /* FlyoverCamera+State.swift */; };
+		25B9DF8720C817C10068FEC5 /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FD820BD967100A4839D /* UIView+JJFloatingActionButton.swift */; };
+		25B9DF8820C817C10068FEC5 /* PAPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3374120C037100098C0BD /* PAPermissionsViewController.swift */; };
+		25B9DF8A20C817C10068FEC5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522400820BEEC9400A4839D /* UIView+Extension.swift */; };
+		25B9DF8B20C817C10068FEC5 /* LayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E6209753CE0062B2A0 /* LayerAnimator.swift */; };
+		25B9DF8C20C817C10068FEC5 /* FlyoverCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B120C6C081009135EB /* FlyoverCamera.swift */; };
+		25B9DF8E20C817C10068FEC5 /* BetterSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7C620C6D017009135EB /* BetterSegmentedControl.swift */; };
+		25B9DF8F20C817C10068FEC5 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDA20BD967100A4839D /* Styles.swift */; };
+		25B9DF9120C817C10068FEC5 /* SwiftSpinnerBlurred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3377020C1542F0098C0BD /* SwiftSpinnerBlurred.swift */; };
+		25B9DF9220C817C10068FEC5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376B20C143C20098C0BD /* NetworkManager.swift */; };
+		25B9DF9320C817C10068FEC5 /* FlyoverCamera+RegionChangeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B420C6C081009135EB /* FlyoverCamera+RegionChangeAnimation.swift */; };
+		25B9DF9420C817C10068FEC5 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376520C03A8B0098C0BD /* UIImage+Extension.swift */; };
+		25B9DF9520C817C10068FEC5 /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C12097496B0062B2A0 /* NeonFrameable.swift */; };
+		25B9DF9620C817C10068FEC5 /* FlyoverCamera+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B320C6C081009135EB /* FlyoverCamera+Configuration.swift */; };
+		25B9DF9720C817C10068FEC5 /* Flyover+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7AF20C6C081009135EB /* Flyover+Operators.swift */; };
+		25B9DF9820C817C10068FEC5 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376720C046070098C0BD /* UIAlertController+Extension.swift */; };
+		25B9DF9920C817C10068FEC5 /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE320BD967100A4839D /* JJCircleView.swift */; };
+		25B9DF9A20C817C10068FEC5 /* PAPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375520C037AA0098C0BD /* PAPermissionsCheck.swift */; };
+		25B9DF9B20C817C10068FEC5 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728F8209763D80062B2A0 /* MKMapView+Extension.swift */; };
+		25B9DF9C20C817C10068FEC5 /* UICircularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E8209753CE0062B2A0 /* UICircularViewController.swift */; };
+		25B9DF9D20C817C10068FEC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D2F422049709C00AACC49 /* AppDelegate.swift */; };
+		25B9DF9E20C817C10068FEC5 /* CicularTransactionDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728EB209753CE0062B2A0 /* CicularTransactionDirector.swift */; };
+		25B9DF9F20C817C10068FEC5 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728BE2097465E0062B2A0 /* UIButton+Extension.swift */; };
+		25B9DFA020C817C10068FEC5 /* FlyoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7BA20C6C081009135EB /* FlyoverMapViewController.swift */; };
+		25B9DFA120C817C10068FEC5 /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FE220BD967100A4839D /* JJFloatingActionButton.swift */; };
+		25B9DFA220C817C10068FEC5 /* Flyover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B520C6C081009135EB /* Flyover.swift */; };
+		25B9DFA420C817C10068FEC5 /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C62097496B0062B2A0 /* Neon.swift */; };
+		25B9DFA520C817C10068FEC5 /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDC20BD967100A4839D /* JJActionItem.swift */; };
+		25B9DFA620C817C10068FEC5 /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDF20BD967100A4839D /* UIColor+JJFloatingActionButton.swift */; };
+		25B9DFA720C817C10068FEC5 /* DefaultCircularAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E9209753CE0062B2A0 /* DefaultCircularAnimation.swift */; };
+		25B9DFA820C817C10068FEC5 /* UICircularViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E4209753CE0062B2A0 /* UICircularViewControllerExtension.swift */; };
+		25B9DFA920C817C10068FEC5 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDB20BD967100A4839D /* AnimationConfiguration.swift */; };
+		25B9DFAA20C817C10068FEC5 /* PACameraPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375420C037AA0098C0BD /* PACameraPermissionsCheck.swift */; };
+		25B9DFAB20C817C10068FEC5 /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C32097496B0062B2A0 /* NeonAnchorable.swift */; };
+		25B9DFAC20C817C10068FEC5 /* PinCodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A220C69A1D009135EB /* PinCodeField.swift */; };
+		25B9DFAD20C817C10068FEC5 /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C42097496B0062B2A0 /* NeonAlignable.swift */; };
+		25B9DFAE20C817C10068FEC5 /* FlyoverAwesomePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B720C6C081009135EB /* FlyoverAwesomePlace.swift */; };
+		25B9DFAF20C817C10068FEC5 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDD20BD967100A4839D /* JJFloatingActionButtonState.swift */; };
+		25B9DFB020C817C10068FEC5 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A420C69A51009135EB /* PinViewController.swift */; };
+		25B9DFB220C817C10068FEC5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376920C143690098C0BD /* Reachability.swift */; };
+		25B9DFB320C817C10068FEC5 /* UICircularNavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E5209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift */; };
+		25B9DFB520C817C10068FEC5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF420BEC89100A4839D /* Crashlytics.framework */; };
+		25B9DFB620C817C10068FEC5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF520BEC89100A4839D /* Fabric.framework */; };
+		25B9DFB920C817C10068FEC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D728A320935DB20062B2A0 /* UIKit.framework */; };
+		25B9DFBA20C817C10068FEC5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7289C20933E5B0062B2A0 /* libz.tbd */; };
+		25B9DFBB20C817C10068FEC5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7289A20933E4F0062B2A0 /* libc++.tbd */; };
+		25B9DFBC20C817C10068FEC5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D728A120935CCA0062B2A0 /* MapKit.framework */; };
+		25B9DFBD20C817C10068FEC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9AE612088D5C300727E4C /* CoreGraphics.framework */; };
+		25B9DFBE20C817C10068FEC5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2532B10B206D681200ED5840 /* CoreLocation.framework */; };
+		25B9DFBF20C817C10068FEC5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2532B10D206D681700ED5840 /* CoreMotion.framework */; };
+		25B9DFC020C817C10068FEC5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D81D04204D944D0023A8B1 /* AVFoundation.framework */; };
+		25B9DFC120C817C10068FEC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D81D01204D944C0023A8B1 /* QuartzCore.framework */; };
+		25B9DFC420C817C10068FEC5 /* ScapePrivacy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 25223FFF20BEE13300A4839D /* ScapePrivacy.pdf */; };
+		25B9DFC520C817C10068FEC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250D2F4B2049709C00AACC49 /* LaunchScreen.storyboard */; };
+		25B9DFC620C817C10068FEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250D2F492049709C00AACC49 /* Assets.xcassets */; };
+		25C3373320C02DF10098C0BD /* PermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3373220C02DF10098C0BD /* PermissionsViewController.swift */; };
+		25C3374420C037100098C0BD /* PAPermissionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3373E20C037100098C0BD /* PAPermissionsTableViewCell.swift */; };
+		25C3374520C037100098C0BD /* PAPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3373F20C037100098C0BD /* PAPermissionsView.swift */; };
+		25C3374720C037100098C0BD /* PAPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3374120C037100098C0BD /* PAPermissionsViewController.swift */; };
+		25C3375F20C037AA0098C0BD /* PALocationPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375120C037AA0098C0BD /* PALocationPermissionsCheck.swift */; };
+		25C3376220C037AA0098C0BD /* PACameraPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375420C037AA0098C0BD /* PACameraPermissionsCheck.swift */; };
+		25C3376320C037AA0098C0BD /* PAPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375520C037AA0098C0BD /* PAPermissionsCheck.swift */; };
+		25C3376420C037AA0098C0BD /* PAConstraintsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375720C037AA0098C0BD /* PAConstraintsUtils.swift */; };
+		25C3376620C03A8B0098C0BD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376520C03A8B0098C0BD /* UIImage+Extension.swift */; };
+		25C3376820C046070098C0BD /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376720C046070098C0BD /* UIAlertController+Extension.swift */; };
+		25C3376A20C143690098C0BD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376920C143690098C0BD /* Reachability.swift */; };
+		25C3376C20C143C20098C0BD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376B20C143C20098C0BD /* NetworkManager.swift */; };
+		25C3376F20C148C80098C0BD /* ScapeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376E20C148C80098C0BD /* ScapeState.swift */; };
+		25C3377120C1542F0098C0BD /* SwiftSpinnerBlurred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3377020C1542F0098C0BD /* SwiftSpinnerBlurred.swift */; };
+		25D7289B20933E4F0062B2A0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7289A20933E4F0062B2A0 /* libc++.tbd */; };
+		25D7289D20933E5B0062B2A0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7289C20933E5B0062B2A0 /* libz.tbd */; };
+		25D728A220935CDD0062B2A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D728A120935CCA0062B2A0 /* MapKit.framework */; };
+		25D728A420935DB30062B2A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D728A320935DB20062B2A0 /* UIKit.framework */; };
+		25D728BF2097465E0062B2A0 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728BE2097465E0062B2A0 /* UIButton+Extension.swift */; };
+		25D728C72097496B0062B2A0 /* NeonFrameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C12097496B0062B2A0 /* NeonFrameable.swift */; };
+		25D728C82097496B0062B2A0 /* NeonGroupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C22097496B0062B2A0 /* NeonGroupable.swift */; };
+		25D728C92097496B0062B2A0 /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C32097496B0062B2A0 /* NeonAnchorable.swift */; };
+		25D728CA2097496B0062B2A0 /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C42097496B0062B2A0 /* NeonAlignable.swift */; };
+		25D728CB2097496B0062B2A0 /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C52097496B0062B2A0 /* NeonExtensions.swift */; };
+		25D728CC2097496B0062B2A0 /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C62097496B0062B2A0 /* Neon.swift */; };
+		25D728CE20974BE60062B2A0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728CD20974BE60062B2A0 /* UIColor+Extension.swift */; };
+		25D728EC209753CE0062B2A0 /* UICircularViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E4209753CE0062B2A0 /* UICircularViewControllerExtension.swift */; };
+		25D728ED209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E5209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift */; };
+		25D728EE209753CE0062B2A0 /* LayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E6209753CE0062B2A0 /* LayerAnimator.swift */; };
+		25D728EF209753CE0062B2A0 /* UIViewRadial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E7209753CE0062B2A0 /* UIViewRadial.swift */; };
+		25D728F0209753CE0062B2A0 /* UICircularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E8209753CE0062B2A0 /* UICircularViewController.swift */; };
+		25D728F1209753CE0062B2A0 /* DefaultCircularAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E9209753CE0062B2A0 /* DefaultCircularAnimation.swift */; };
+		25D728F2209753CE0062B2A0 /* RevealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728EA209753CE0062B2A0 /* RevealType.swift */; };
+		25D728F3209753CE0062B2A0 /* CicularTransactionDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728EB209753CE0062B2A0 /* CicularTransactionDirector.swift */; };
+		25D728F720975FC30062B2A0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728F620975FC30062B2A0 /* MapViewController.swift */; };
+		25D728F9209763D80062B2A0 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728F8209763D80062B2A0 /* MKMapView+Extension.swift */; };
+		25D7291520986A300062B2A0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D7291420986A300062B2A0 /* UIViewController+Extension.swift */; };
+		25D81D06204D944D0023A8B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D81D01204D944C0023A8B1 /* QuartzCore.framework */; };
+		25D81D09204D944D0023A8B1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D81D04204D944D0023A8B1 /* AVFoundation.framework */; };
+		9E9B91812224489B003A7218 /* ScapeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9B91802224489B003A7218 /* ScapeKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		250D2F3F2049709C00AACC49 /* Pixscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		250D2F422049709C00AACC49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		250D2F442049709C00AACC49 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		250D2F492049709C00AACC49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		250D2F4C2049709C00AACC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		250D2F4E2049709C00AACC49 /* Pixscape-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pixscape-Info.plist"; sourceTree = "<group>"; };
+		25223FC020BD706900A4839D /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		25223FD720BD967100A4839D /* JJFloatingActionButton+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JJFloatingActionButton+Animation.swift"; sourceTree = "<group>"; };
+		25223FD820BD967100A4839D /* UIView+JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		25223FD920BD967100A4839D /* JJFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		25223FDA20BD967100A4839D /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		25223FDB20BD967100A4839D /* AnimationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
+		25223FDC20BD967100A4839D /* JJActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJActionItem.swift; sourceTree = "<group>"; };
+		25223FDD20BD967100A4839D /* JJFloatingActionButtonState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButtonState.swift; sourceTree = "<group>"; };
+		25223FDE20BD967100A4839D /* JJActionItemTitlePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJActionItemTitlePosition.swift; sourceTree = "<group>"; };
+		25223FDF20BD967100A4839D /* UIColor+JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		25223FE020BD967100A4839D /* JJFloatingActionButton+Placement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JJFloatingActionButton+Placement.swift"; sourceTree = "<group>"; };
+		25223FE120BD967100A4839D /* LayerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerProperties.swift; sourceTree = "<group>"; };
+		25223FE220BD967100A4839D /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButton.swift; sourceTree = "<group>"; };
+		25223FE320BD967100A4839D /* JJCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJCircleView.swift; sourceTree = "<group>"; };
+		25223FF220BEAA5D00A4839D /* GeoWayPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoWayPoint.swift; sourceTree = "<group>"; };
+		25223FF420BEC89100A4839D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Pixscape/Frameworks/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		25223FF520BEC89100A4839D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Pixscape/Frameworks/Fabric.framework; sourceTree = SOURCE_ROOT; };
+		25223FFD20BEDFEE00A4839D /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		25223FFF20BEE13300A4839D /* ScapePrivacy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ScapePrivacy.pdf; sourceTree = "<group>"; };
+		2522400820BEEC9400A4839D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2532B10B206D681200ED5840 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2532B10D206D681700ED5840 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2536AE9D216CAFE70029A6F6 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		2536AE9F216CAFF10029A6F6 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		2536AED3217490CD0029A6F6 /* CompassPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassPoints.swift; sourceTree = "<group>"; };
+		2536AEE02174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+GeoSessionObserver.swift"; sourceTree = "<group>"; };
+		2536AEE32174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+MapViewDelegate.swift"; sourceTree = "<group>"; };
+		2536AEE62174D83F0029A6F6 /* ARViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Setup.swift"; sourceTree = "<group>"; };
+		2544098820C827D5008296A2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		2568E7A220C69A1D009135EB /* PinCodeField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeField.swift; sourceTree = "<group>"; };
+		2568E7A420C69A51009135EB /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		2568E7A620C6AAE4009135EB /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		2568E7AF20C6C081009135EB /* Flyover+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flyover+Operators.swift"; sourceTree = "<group>"; };
+		2568E7B120C6C081009135EB /* FlyoverCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyoverCamera.swift; sourceTree = "<group>"; };
+		2568E7B220C6C081009135EB /* FlyoverCamera+State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlyoverCamera+State.swift"; sourceTree = "<group>"; };
+		2568E7B320C6C081009135EB /* FlyoverCamera+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlyoverCamera+Configuration.swift"; sourceTree = "<group>"; };
+		2568E7B420C6C081009135EB /* FlyoverCamera+RegionChangeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlyoverCamera+RegionChangeAnimation.swift"; sourceTree = "<group>"; };
+		2568E7B520C6C081009135EB /* Flyover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flyover.swift; sourceTree = "<group>"; };
+		2568E7B720C6C081009135EB /* FlyoverAwesomePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyoverAwesomePlace.swift; sourceTree = "<group>"; };
+		2568E7B920C6C081009135EB /* FlyoverMapView+MapType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FlyoverMapView+MapType.swift"; sourceTree = "<group>"; };
+		2568E7BA20C6C081009135EB /* FlyoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyoverMapViewController.swift; sourceTree = "<group>"; };
+		2568E7BB20C6C081009135EB /* FlyoverMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyoverMapView.swift; sourceTree = "<group>"; };
+		2568E7C620C6D017009135EB /* BetterSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedControl.swift; sourceTree = "<group>"; };
+		2568E7C820C6D0D1009135EB /* BetterSegmentedOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedOptions.swift; sourceTree = "<group>"; };
+		25A6D685216BA5C50024F8C7 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		25B9AE612088D5C300727E4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25B9DFCC20C817C10068FEC5 /* PixscapeDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixscapeDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B9DFCE20C818B60068FEC5 /* PixscapeDev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PixscapeDev-Info.plist"; sourceTree = "<group>"; };
+		25C3373220C02DF10098C0BD /* PermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsViewController.swift; sourceTree = "<group>"; };
+		25C3373E20C037100098C0BD /* PAPermissionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAPermissionsTableViewCell.swift; sourceTree = "<group>"; };
+		25C3373F20C037100098C0BD /* PAPermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAPermissionsView.swift; sourceTree = "<group>"; };
+		25C3374120C037100098C0BD /* PAPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAPermissionsViewController.swift; sourceTree = "<group>"; };
+		25C3375120C037AA0098C0BD /* PALocationPermissionsCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PALocationPermissionsCheck.swift; sourceTree = "<group>"; };
+		25C3375420C037AA0098C0BD /* PACameraPermissionsCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACameraPermissionsCheck.swift; sourceTree = "<group>"; };
+		25C3375520C037AA0098C0BD /* PAPermissionsCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAPermissionsCheck.swift; sourceTree = "<group>"; };
+		25C3375720C037AA0098C0BD /* PAConstraintsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAConstraintsUtils.swift; sourceTree = "<group>"; };
+		25C3376520C03A8B0098C0BD /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		25C3376720C046070098C0BD /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		25C3376920C143690098C0BD /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Pixscape/Utils/Reachability.swift; sourceTree = SOURCE_ROOT; };
+		25C3376B20C143C20098C0BD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		25C3376E20C148C80098C0BD /* ScapeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeState.swift; sourceTree = "<group>"; };
+		25C3377020C1542F0098C0BD /* SwiftSpinnerBlurred.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinnerBlurred.swift; sourceTree = "<group>"; };
+		25D7289A20933E4F0062B2A0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		25D7289C20933E5B0062B2A0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		25D728A120935CCA0062B2A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		25D728A320935DB20062B2A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		25D728BE2097465E0062B2A0 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		25D728C12097496B0062B2A0 /* NeonFrameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonFrameable.swift; sourceTree = "<group>"; };
+		25D728C22097496B0062B2A0 /* NeonGroupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonGroupable.swift; sourceTree = "<group>"; };
+		25D728C32097496B0062B2A0 /* NeonAnchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAnchorable.swift; sourceTree = "<group>"; };
+		25D728C42097496B0062B2A0 /* NeonAlignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonAlignable.swift; sourceTree = "<group>"; };
+		25D728C52097496B0062B2A0 /* NeonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeonExtensions.swift; sourceTree = "<group>"; };
+		25D728C62097496B0062B2A0 /* Neon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neon.swift; sourceTree = "<group>"; };
+		25D728CD20974BE60062B2A0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		25D728E4209753CE0062B2A0 /* UICircularViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularViewControllerExtension.swift; sourceTree = "<group>"; };
+		25D728E5209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularNavigationControllerExtension.swift; sourceTree = "<group>"; };
+		25D728E6209753CE0062B2A0 /* LayerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimator.swift; sourceTree = "<group>"; };
+		25D728E7209753CE0062B2A0 /* UIViewRadial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRadial.swift; sourceTree = "<group>"; };
+		25D728E8209753CE0062B2A0 /* UICircularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularViewController.swift; sourceTree = "<group>"; };
+		25D728E9209753CE0062B2A0 /* DefaultCircularAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCircularAnimation.swift; sourceTree = "<group>"; };
+		25D728EA209753CE0062B2A0 /* RevealType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealType.swift; sourceTree = "<group>"; };
+		25D728EB209753CE0062B2A0 /* CicularTransactionDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CicularTransactionDirector.swift; sourceTree = "<group>"; };
+		25D728F620975FC30062B2A0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		25D728F8209763D80062B2A0 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
+		25D7291420986A300062B2A0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		25D81D01204D944C0023A8B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		25D81D04204D944D0023A8B1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E9B917E222447EE003A7218 /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScapeKit.framework; path = ../../../scapekit/output/release/ScapeKit.framework; sourceTree = "<group>"; };
+		9E9B91802224489B003A7218 /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScapeKit.framework; path = Pixscape/Frameworks/ScapeKit.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		250D2F3C2049709C00AACC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2565D23920C710670018F4BD /* Crashlytics.framework in Frameworks */,
+				2565D23820C710530018F4BD /* Fabric.framework in Frameworks */,
+				25D728A420935DB30062B2A0 /* UIKit.framework in Frameworks */,
+				25D7289D20933E5B0062B2A0 /* libz.tbd in Frameworks */,
+				25D7289B20933E4F0062B2A0 /* libc++.tbd in Frameworks */,
+				25D728A220935CDD0062B2A0 /* MapKit.framework in Frameworks */,
+				25B9AE622088D5C300727E4C /* CoreGraphics.framework in Frameworks */,
+				2532B10C206D681200ED5840 /* CoreLocation.framework in Frameworks */,
+				2532B10E206D681700ED5840 /* CoreMotion.framework in Frameworks */,
+				25D81D09204D944D0023A8B1 /* AVFoundation.framework in Frameworks */,
+				25D81D06204D944D0023A8B1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B9DFB420C817C10068FEC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9B91812224489B003A7218 /* ScapeKit.framework in Frameworks */,
+				2536AEA0216CAFF10029A6F6 /* ARKit.framework in Frameworks */,
+				2536AE9E216CAFE70029A6F6 /* SceneKit.framework in Frameworks */,
+				25B9DFB520C817C10068FEC5 /* Crashlytics.framework in Frameworks */,
+				25B9DFB620C817C10068FEC5 /* Fabric.framework in Frameworks */,
+				25B9DFB920C817C10068FEC5 /* UIKit.framework in Frameworks */,
+				25B9DFBA20C817C10068FEC5 /* libz.tbd in Frameworks */,
+				25B9DFBB20C817C10068FEC5 /* libc++.tbd in Frameworks */,
+				25B9DFBC20C817C10068FEC5 /* MapKit.framework in Frameworks */,
+				25B9DFBD20C817C10068FEC5 /* CoreGraphics.framework in Frameworks */,
+				25B9DFBE20C817C10068FEC5 /* CoreLocation.framework in Frameworks */,
+				25B9DFBF20C817C10068FEC5 /* CoreMotion.framework in Frameworks */,
+				25B9DFC020C817C10068FEC5 /* AVFoundation.framework in Frameworks */,
+				25B9DFC120C817C10068FEC5 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250D2F362049709C00AACC49 = {
+			isa = PBXGroup;
+			children = (
+				250D2F412049709C00AACC49 /* Pixscape */,
+				250D2F402049709C00AACC49 /* Products */,
+				250D2F542049715C00AACC49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		250D2F402049709C00AACC49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250D2F3F2049709C00AACC49 /* Pixscape.app */,
+				25B9DFCC20C817C10068FEC5 /* PixscapeDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		250D2F412049709C00AACC49 /* Pixscape */ = {
+			isa = PBXGroup;
+			children = (
+				25C3376D20C148670098C0BD /* Model */,
+				25223FF120BEAA4900A4839D /* Views */,
+				25223FC420BD72F700A4839D /* ViewControllers */,
+				25223FC220BD72CF00A4839D /* Utils */,
+				25223FC320BD72E700A4839D /* Supporting Files */,
+			);
+			path = Pixscape;
+			sourceTree = "<group>";
+		};
+		250D2F542049715C00AACC49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B91802224489B003A7218 /* ScapeKit.framework */,
+				2536AE9F216CAFF10029A6F6 /* ARKit.framework */,
+				2536AE9D216CAFE70029A6F6 /* SceneKit.framework */,
+				25D728A320935DB20062B2A0 /* UIKit.framework */,
+				25D7289C20933E5B0062B2A0 /* libz.tbd */,
+				25D7289A20933E4F0062B2A0 /* libc++.tbd */,
+				25B9AE6A2089446900727E4C /* Frameworks */,
+				25D728A120935CCA0062B2A0 /* MapKit.framework */,
+				25B9AE612088D5C300727E4C /* CoreGraphics.framework */,
+				2532B10D206D681700ED5840 /* CoreMotion.framework */,
+				2532B10B206D681200ED5840 /* CoreLocation.framework */,
+				25D81D04204D944D0023A8B1 /* AVFoundation.framework */,
+				25D81D01204D944C0023A8B1 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			path = pixscape/Frameworks;
+			sourceTree = "<group>";
+		};
+		25223FC220BD72CF00A4839D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2522400720BEEC8400A4839D /* Extensions */,
+				25C3373C20C036FA0098C0BD /* PAPermissions */,
+				25223FD620BD967100A4839D /* JJFloatingActionButton */,
+				25D728E3209753CE0062B2A0 /* CircularRevealKit */,
+				25D728C02097496B0062B2A0 /* Neon */,
+				2568E7AE20C6C081009135EB /* FlyOver */,
+				25C3376920C143690098C0BD /* Reachability.swift */,
+				2544098820C827D5008296A2 /* Device.swift */,
+				2568E7C620C6D017009135EB /* BetterSegmentedControl.swift */,
+				2568E7C820C6D0D1009135EB /* BetterSegmentedOptions.swift */,
+				25223FC020BD706900A4839D /* SwiftSpinner.swift */,
+				25C3377020C1542F0098C0BD /* SwiftSpinnerBlurred.swift */,
+				25C3376B20C143C20098C0BD /* NetworkManager.swift */,
+				2568E7A220C69A1D009135EB /* PinCodeField.swift */,
+				2568E7A620C6AAE4009135EB /* AppUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		25223FC320BD72E700A4839D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				250D2F422049709C00AACC49 /* AppDelegate.swift */,
+				250D2F492049709C00AACC49 /* Assets.xcassets */,
+				250D2F4B2049709C00AACC49 /* LaunchScreen.storyboard */,
+				25B9DFCE20C818B60068FEC5 /* PixscapeDev-Info.plist */,
+				250D2F4E2049709C00AACC49 /* Pixscape-Info.plist */,
+				25223FFF20BEE13300A4839D /* ScapePrivacy.pdf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25223FC420BD72F700A4839D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				250D2F442049709C00AACC49 /* ARViewController.swift */,
+				2536AEE62174D83F0029A6F6 /* ARViewController+Setup.swift */,
+				2536AEE02174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift */,
+				2536AEE32174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift */,
+				25D728F620975FC30062B2A0 /* MapViewController.swift */,
+				25223FFD20BEDFEE00A4839D /* TermsViewController.swift */,
+				25C3373220C02DF10098C0BD /* PermissionsViewController.swift */,
+				2568E7A420C69A51009135EB /* PinViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25223FD620BD967100A4839D /* JJFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				25223FD720BD967100A4839D /* JJFloatingActionButton+Animation.swift */,
+				25223FD820BD967100A4839D /* UIView+JJFloatingActionButton.swift */,
+				25223FD920BD967100A4839D /* JJFloatingActionButtonDelegate.swift */,
+				25223FDA20BD967100A4839D /* Styles.swift */,
+				25223FDB20BD967100A4839D /* AnimationConfiguration.swift */,
+				25223FDC20BD967100A4839D /* JJActionItem.swift */,
+				25223FDD20BD967100A4839D /* JJFloatingActionButtonState.swift */,
+				25223FDE20BD967100A4839D /* JJActionItemTitlePosition.swift */,
+				25223FDF20BD967100A4839D /* UIColor+JJFloatingActionButton.swift */,
+				25223FE020BD967100A4839D /* JJFloatingActionButton+Placement.swift */,
+				25223FE120BD967100A4839D /* LayerProperties.swift */,
+				25223FE220BD967100A4839D /* JJFloatingActionButton.swift */,
+				25223FE320BD967100A4839D /* JJCircleView.swift */,
+			);
+			path = JJFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		25223FF120BEAA4900A4839D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25C3373520C02E590098C0BD /* Geo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2522400720BEEC8400A4839D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25A6D685216BA5C50024F8C7 /* CGRect+Extensions.swift */,
+				25D7291420986A300062B2A0 /* UIViewController+Extension.swift */,
+				25D728CD20974BE60062B2A0 /* UIColor+Extension.swift */,
+				25D728BE2097465E0062B2A0 /* UIButton+Extension.swift */,
+				25D728F8209763D80062B2A0 /* MKMapView+Extension.swift */,
+				2522400820BEEC9400A4839D /* UIView+Extension.swift */,
+				25C3376520C03A8B0098C0BD /* UIImage+Extension.swift */,
+				25C3376720C046070098C0BD /* UIAlertController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2568E7AE20C6C081009135EB /* FlyOver */ = {
+			isa = PBXGroup;
+			children = (
+				2568E7AF20C6C081009135EB /* Flyover+Operators.swift */,
+				2568E7B020C6C081009135EB /* Camera */,
+				2568E7B520C6C081009135EB /* Flyover.swift */,
+				2568E7B620C6C081009135EB /* AwesomePlace */,
+				2568E7B820C6C081009135EB /* MapView */,
+			);
+			path = FlyOver;
+			sourceTree = "<group>";
+		};
+		2568E7B020C6C081009135EB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2568E7B120C6C081009135EB /* FlyoverCamera.swift */,
+				2568E7B220C6C081009135EB /* FlyoverCamera+State.swift */,
+				2568E7B320C6C081009135EB /* FlyoverCamera+Configuration.swift */,
+				2568E7B420C6C081009135EB /* FlyoverCamera+RegionChangeAnimation.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2568E7B620C6C081009135EB /* AwesomePlace */ = {
+			isa = PBXGroup;
+			children = (
+				2568E7B720C6C081009135EB /* FlyoverAwesomePlace.swift */,
+			);
+			path = AwesomePlace;
+			sourceTree = "<group>";
+		};
+		2568E7B820C6C081009135EB /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				2568E7B920C6C081009135EB /* FlyoverMapView+MapType.swift */,
+				2568E7BA20C6C081009135EB /* FlyoverMapViewController.swift */,
+				2568E7BB20C6C081009135EB /* FlyoverMapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		25B9AE6A2089446900727E4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B917E222447EE003A7218 /* ScapeKit.framework */,
+				25223FF420BEC89100A4839D /* Crashlytics.framework */,
+				25223FF520BEC89100A4839D /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25C3373520C02E590098C0BD /* Geo */ = {
+			isa = PBXGroup;
+			children = (
+				25223FF220BEAA5D00A4839D /* GeoWayPoint.swift */,
+			);
+			path = Geo;
+			sourceTree = "<group>";
+		};
+		25C3373C20C036FA0098C0BD /* PAPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				25C3374920C037AA0098C0BD /* Checks */,
+				25C3375620C037AA0098C0BD /* Utils */,
+				25C3373E20C037100098C0BD /* PAPermissionsTableViewCell.swift */,
+				25C3373F20C037100098C0BD /* PAPermissionsView.swift */,
+				25C3374120C037100098C0BD /* PAPermissionsViewController.swift */,
+			);
+			path = PAPermissions;
+			sourceTree = "<group>";
+		};
+		25C3374920C037AA0098C0BD /* Checks */ = {
+			isa = PBXGroup;
+			children = (
+				25C3375120C037AA0098C0BD /* PALocationPermissionsCheck.swift */,
+				25C3375420C037AA0098C0BD /* PACameraPermissionsCheck.swift */,
+				25C3375520C037AA0098C0BD /* PAPermissionsCheck.swift */,
+			);
+			path = Checks;
+			sourceTree = "<group>";
+		};
+		25C3375620C037AA0098C0BD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				25C3375720C037AA0098C0BD /* PAConstraintsUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		25C3376D20C148670098C0BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2536AED3217490CD0029A6F6 /* CompassPoints.swift */,
+				25C3376E20C148C80098C0BD /* ScapeState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25D728C02097496B0062B2A0 /* Neon */ = {
+			isa = PBXGroup;
+			children = (
+				25D728C12097496B0062B2A0 /* NeonFrameable.swift */,
+				25D728C22097496B0062B2A0 /* NeonGroupable.swift */,
+				25D728C32097496B0062B2A0 /* NeonAnchorable.swift */,
+				25D728C42097496B0062B2A0 /* NeonAlignable.swift */,
+				25D728C52097496B0062B2A0 /* NeonExtensions.swift */,
+				25D728C62097496B0062B2A0 /* Neon.swift */,
+			);
+			path = Neon;
+			sourceTree = "<group>";
+		};
+		25D728E3209753CE0062B2A0 /* CircularRevealKit */ = {
+			isa = PBXGroup;
+			children = (
+				25D728E4209753CE0062B2A0 /* UICircularViewControllerExtension.swift */,
+				25D728E5209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift */,
+				25D728E6209753CE0062B2A0 /* LayerAnimator.swift */,
+				25D728E7209753CE0062B2A0 /* UIViewRadial.swift */,
+				25D728E8209753CE0062B2A0 /* UICircularViewController.swift */,
+				25D728E9209753CE0062B2A0 /* DefaultCircularAnimation.swift */,
+				25D728EA209753CE0062B2A0 /* RevealType.swift */,
+				25D728EB209753CE0062B2A0 /* CicularTransactionDirector.swift */,
+			);
+			path = CircularRevealKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		257452C7207DF44900D7A668 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B9DFC720C817C10068FEC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		250D2F3E2049709C00AACC49 /* Pixscape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250D2F512049709C00AACC49 /* Build configuration list for PBXNativeTarget "Pixscape" */;
+			buildPhases = (
+				250D2F3B2049709C00AACC49 /* Sources */,
+				250D2F3C2049709C00AACC49 /* Frameworks */,
+				250D2F3D2049709C00AACC49 /* Resources */,
+				257452C7207DF44900D7A668 /* Headers */,
+				25223FFC20BEC93D00A4839D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixscape;
+			productName = pixscape;
+			productReference = 250D2F3F2049709C00AACC49 /* Pixscape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25B9DF6820C817C10068FEC5 /* PixscapeDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B9DFC920C817C10068FEC5 /* Build configuration list for PBXNativeTarget "PixscapeDev" */;
+			buildPhases = (
+				25B9DF6920C817C10068FEC5 /* Sources */,
+				25B9DFB420C817C10068FEC5 /* Frameworks */,
+				25B9DFC220C817C10068FEC5 /* Resources */,
+				25B9DFC720C817C10068FEC5 /* Headers */,
+				25B9DFC820C817C10068FEC5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixscapeDev;
+			productName = pixscape;
+			productReference = 25B9DFCC20C817C10068FEC5 /* PixscapeDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		250D2F372049709C00AACC49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Scape Technologies Limited";
+				TargetAttributes = {
+					250D2F3E2049709C00AACC49 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					25B9DF6820C817C10068FEC5 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 250D2F3A2049709C00AACC49 /* Build configuration list for PBXProject "Pixscape" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 250D2F362049709C00AACC49;
+			productRefGroup = 250D2F402049709C00AACC49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25B9DF6820C817C10068FEC5 /* PixscapeDev */,
+				250D2F3E2049709C00AACC49 /* Pixscape */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		250D2F3D2049709C00AACC49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2522400020BEE13300A4839D /* ScapePrivacy.pdf in Resources */,
+				250D2F4D2049709C00AACC49 /* LaunchScreen.storyboard in Resources */,
+				250D2F4A2049709C00AACC49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B9DFC220C817C10068FEC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B9DFC420C817C10068FEC5 /* ScapePrivacy.pdf in Resources */,
+				25B9DFC520C817C10068FEC5 /* LaunchScreen.storyboard in Resources */,
+				25B9DFC620C817C10068FEC5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25223FFC20BEC93D00A4839D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Pixscape/Frameworks/Fabric.framework/run\" a0eb68f411a9f26fa3a3cd65029fd62264e3a7bc 3f9a080025575f0f9886b0f1956c8e29246bc0aff02d7beb7f8ab6bc2a123a56";
+		};
+		25B9DFC820C817C10068FEC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Pixscape/Frameworks/Fabric.framework/run\" a0eb68f411a9f26fa3a3cd65029fd62264e3a7bc 3f9a080025575f0f9886b0f1956c8e29246bc0aff02d7beb7f8ab6bc2a123a56";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		250D2F3B2049709C00AACC49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D728F720975FC30062B2A0 /* MapViewController.swift in Sources */,
+				25D728C82097496B0062B2A0 /* NeonGroupable.swift in Sources */,
+				25223FEB20BD967100A4839D /* JJActionItemTitlePosition.swift in Sources */,
+				2536AED5217490CD0029A6F6 /* CompassPoints.swift in Sources */,
+				25C3374520C037100098C0BD /* PAPermissionsView.swift in Sources */,
+				2536AEE22174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift in Sources */,
+				25C3376F20C148C80098C0BD /* ScapeState.swift in Sources */,
+				25D728EF209753CE0062B2A0 /* UIViewRadial.swift in Sources */,
+				25C3374420C037100098C0BD /* PAPermissionsTableViewCell.swift in Sources */,
+				25C3375F20C037AA0098C0BD /* PALocationPermissionsCheck.swift in Sources */,
+				2536AEE52174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift in Sources */,
+				25D728CB2097496B0062B2A0 /* NeonExtensions.swift in Sources */,
+				25223FE620BD967100A4839D /* JJFloatingActionButtonDelegate.swift in Sources */,
+				25223FF320BEAA5D00A4839D /* GeoWayPoint.swift in Sources */,
+				2568E7A720C6AAE4009135EB /* AppUtils.swift in Sources */,
+				25223FC120BD706900A4839D /* SwiftSpinner.swift in Sources */,
+				250D2F452049709C00AACC49 /* ARViewController.swift in Sources */,
+				2568E7C520C6C081009135EB /* FlyoverMapView.swift in Sources */,
+				2536AEE82174D83F0029A6F6 /* ARViewController+Setup.swift in Sources */,
+				25223FED20BD967100A4839D /* JJFloatingActionButton+Placement.swift in Sources */,
+				2568E7C320C6C081009135EB /* FlyoverMapView+MapType.swift in Sources */,
+				25D728F2209753CE0062B2A0 /* RevealType.swift in Sources */,
+				25C3376420C037AA0098C0BD /* PAConstraintsUtils.swift in Sources */,
+				2568E7C920C6D0D1009135EB /* BetterSegmentedOptions.swift in Sources */,
+				25223FEE20BD967100A4839D /* LayerProperties.swift in Sources */,
+				25D728CE20974BE60062B2A0 /* UIColor+Extension.swift in Sources */,
+				2544098A20C827D5008296A2 /* Device.swift in Sources */,
+				25D7291520986A300062B2A0 /* UIViewController+Extension.swift in Sources */,
+				25223FE420BD967100A4839D /* JJFloatingActionButton+Animation.swift in Sources */,
+				25C3373320C02DF10098C0BD /* PermissionsViewController.swift in Sources */,
+				25223FFE20BEDFEE00A4839D /* TermsViewController.swift in Sources */,
+				2568E7BE20C6C081009135EB /* FlyoverCamera+State.swift in Sources */,
+				25223FE520BD967100A4839D /* UIView+JJFloatingActionButton.swift in Sources */,
+				25C3374720C037100098C0BD /* PAPermissionsViewController.swift in Sources */,
+				2522400920BEEC9400A4839D /* UIView+Extension.swift in Sources */,
+				25D728EE209753CE0062B2A0 /* LayerAnimator.swift in Sources */,
+				2568E7BD20C6C081009135EB /* FlyoverCamera.swift in Sources */,
+				2568E7C720C6D018009135EB /* BetterSegmentedControl.swift in Sources */,
+				25223FE720BD967100A4839D /* Styles.swift in Sources */,
+				25A6D687216BA5C50024F8C7 /* CGRect+Extensions.swift in Sources */,
+				25C3377120C1542F0098C0BD /* SwiftSpinnerBlurred.swift in Sources */,
+				25C3376C20C143C20098C0BD /* NetworkManager.swift in Sources */,
+				2568E7C020C6C081009135EB /* FlyoverCamera+RegionChangeAnimation.swift in Sources */,
+				25C3376620C03A8B0098C0BD /* UIImage+Extension.swift in Sources */,
+				25D728C72097496B0062B2A0 /* NeonFrameable.swift in Sources */,
+				2568E7BF20C6C081009135EB /* FlyoverCamera+Configuration.swift in Sources */,
+				2568E7BC20C6C081009135EB /* Flyover+Operators.swift in Sources */,
+				25C3376820C046070098C0BD /* UIAlertController+Extension.swift in Sources */,
+				25223FF020BD967100A4839D /* JJCircleView.swift in Sources */,
+				25C3376320C037AA0098C0BD /* PAPermissionsCheck.swift in Sources */,
+				25D728F9209763D80062B2A0 /* MKMapView+Extension.swift in Sources */,
+				25D728F0209753CE0062B2A0 /* UICircularViewController.swift in Sources */,
+				250D2F432049709C00AACC49 /* AppDelegate.swift in Sources */,
+				25D728F3209753CE0062B2A0 /* CicularTransactionDirector.swift in Sources */,
+				25D728BF2097465E0062B2A0 /* UIButton+Extension.swift in Sources */,
+				2568E7C420C6C081009135EB /* FlyoverMapViewController.swift in Sources */,
+				25223FEF20BD967100A4839D /* JJFloatingActionButton.swift in Sources */,
+				2568E7C120C6C081009135EB /* Flyover.swift in Sources */,
+				25D728CC2097496B0062B2A0 /* Neon.swift in Sources */,
+				25223FE920BD967100A4839D /* JJActionItem.swift in Sources */,
+				25223FEC20BD967100A4839D /* UIColor+JJFloatingActionButton.swift in Sources */,
+				25D728F1209753CE0062B2A0 /* DefaultCircularAnimation.swift in Sources */,
+				25D728EC209753CE0062B2A0 /* UICircularViewControllerExtension.swift in Sources */,
+				25223FE820BD967100A4839D /* AnimationConfiguration.swift in Sources */,
+				25C3376220C037AA0098C0BD /* PACameraPermissionsCheck.swift in Sources */,
+				25D728C92097496B0062B2A0 /* NeonAnchorable.swift in Sources */,
+				2568E7A320C69A1D009135EB /* PinCodeField.swift in Sources */,
+				25D728CA2097496B0062B2A0 /* NeonAlignable.swift in Sources */,
+				2568E7C220C6C081009135EB /* FlyoverAwesomePlace.swift in Sources */,
+				25223FEA20BD967100A4839D /* JJFloatingActionButtonState.swift in Sources */,
+				2568E7A520C69A51009135EB /* PinViewController.swift in Sources */,
+				25C3376A20C143690098C0BD /* Reachability.swift in Sources */,
+				25D728ED209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B9DF6920C817C10068FEC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B9DF6A20C817C10068FEC5 /* MapViewController.swift in Sources */,
+				25B9DF6B20C817C10068FEC5 /* NeonGroupable.swift in Sources */,
+				25B9DF6C20C817C10068FEC5 /* JJActionItemTitlePosition.swift in Sources */,
+				2536AED4217490CD0029A6F6 /* CompassPoints.swift in Sources */,
+				25B9DF6D20C817C10068FEC5 /* PAPermissionsView.swift in Sources */,
+				2536AEE12174D71A0029A6F6 /* ARViewController+GeoSessionObserver.swift in Sources */,
+				25B9DF6E20C817C10068FEC5 /* ScapeState.swift in Sources */,
+				25B9DF6F20C817C10068FEC5 /* UIViewRadial.swift in Sources */,
+				25B9DF7120C817C10068FEC5 /* PAPermissionsTableViewCell.swift in Sources */,
+				25B9DF7220C817C10068FEC5 /* PALocationPermissionsCheck.swift in Sources */,
+				2536AEE42174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift in Sources */,
+				25B9DF7320C817C10068FEC5 /* NeonExtensions.swift in Sources */,
+				25B9DF7420C817C10068FEC5 /* JJFloatingActionButtonDelegate.swift in Sources */,
+				25B9DF7520C817C10068FEC5 /* GeoWayPoint.swift in Sources */,
+				25B9DF7620C817C10068FEC5 /* AppUtils.swift in Sources */,
+				25B9DF7720C817C10068FEC5 /* SwiftSpinner.swift in Sources */,
+				25B9DF7820C817C10068FEC5 /* ARViewController.swift in Sources */,
+				25B9DF7920C817C10068FEC5 /* FlyoverMapView.swift in Sources */,
+				2536AEE72174D83F0029A6F6 /* ARViewController+Setup.swift in Sources */,
+				25B9DF7A20C817C10068FEC5 /* JJFloatingActionButton+Placement.swift in Sources */,
+				25B9DF7B20C817C10068FEC5 /* FlyoverMapView+MapType.swift in Sources */,
+				25B9DF7C20C817C10068FEC5 /* RevealType.swift in Sources */,
+				25B9DF7D20C817C10068FEC5 /* PAConstraintsUtils.swift in Sources */,
+				25B9DF7F20C817C10068FEC5 /* BetterSegmentedOptions.swift in Sources */,
+				25B9DF8020C817C10068FEC5 /* LayerProperties.swift in Sources */,
+				25B9DF8120C817C10068FEC5 /* UIColor+Extension.swift in Sources */,
+				2544098920C827D5008296A2 /* Device.swift in Sources */,
+				25B9DF8220C817C10068FEC5 /* UIViewController+Extension.swift in Sources */,
+				25B9DF8320C817C10068FEC5 /* JJFloatingActionButton+Animation.swift in Sources */,
+				25B9DF8420C817C10068FEC5 /* PermissionsViewController.swift in Sources */,
+				25B9DF8520C817C10068FEC5 /* TermsViewController.swift in Sources */,
+				25B9DF8620C817C10068FEC5 /* FlyoverCamera+State.swift in Sources */,
+				25B9DF8720C817C10068FEC5 /* UIView+JJFloatingActionButton.swift in Sources */,
+				25B9DF8820C817C10068FEC5 /* PAPermissionsViewController.swift in Sources */,
+				25B9DF8A20C817C10068FEC5 /* UIView+Extension.swift in Sources */,
+				25B9DF8B20C817C10068FEC5 /* LayerAnimator.swift in Sources */,
+				25B9DF8C20C817C10068FEC5 /* FlyoverCamera.swift in Sources */,
+				25B9DF8E20C817C10068FEC5 /* BetterSegmentedControl.swift in Sources */,
+				25B9DF8F20C817C10068FEC5 /* Styles.swift in Sources */,
+				25A6D686216BA5C50024F8C7 /* CGRect+Extensions.swift in Sources */,
+				25B9DF9120C817C10068FEC5 /* SwiftSpinnerBlurred.swift in Sources */,
+				25B9DF9220C817C10068FEC5 /* NetworkManager.swift in Sources */,
+				25B9DF9320C817C10068FEC5 /* FlyoverCamera+RegionChangeAnimation.swift in Sources */,
+				25B9DF9420C817C10068FEC5 /* UIImage+Extension.swift in Sources */,
+				25B9DF9520C817C10068FEC5 /* NeonFrameable.swift in Sources */,
+				25B9DF9620C817C10068FEC5 /* FlyoverCamera+Configuration.swift in Sources */,
+				25B9DF9720C817C10068FEC5 /* Flyover+Operators.swift in Sources */,
+				25B9DF9820C817C10068FEC5 /* UIAlertController+Extension.swift in Sources */,
+				25B9DF9920C817C10068FEC5 /* JJCircleView.swift in Sources */,
+				25B9DF9A20C817C10068FEC5 /* PAPermissionsCheck.swift in Sources */,
+				25B9DF9B20C817C10068FEC5 /* MKMapView+Extension.swift in Sources */,
+				25B9DF9C20C817C10068FEC5 /* UICircularViewController.swift in Sources */,
+				25B9DF9D20C817C10068FEC5 /* AppDelegate.swift in Sources */,
+				25B9DF9E20C817C10068FEC5 /* CicularTransactionDirector.swift in Sources */,
+				25B9DF9F20C817C10068FEC5 /* UIButton+Extension.swift in Sources */,
+				25B9DFA020C817C10068FEC5 /* FlyoverMapViewController.swift in Sources */,
+				25B9DFA120C817C10068FEC5 /* JJFloatingActionButton.swift in Sources */,
+				25B9DFA220C817C10068FEC5 /* Flyover.swift in Sources */,
+				25B9DFA420C817C10068FEC5 /* Neon.swift in Sources */,
+				25B9DFA520C817C10068FEC5 /* JJActionItem.swift in Sources */,
+				25B9DFA620C817C10068FEC5 /* UIColor+JJFloatingActionButton.swift in Sources */,
+				25B9DFA720C817C10068FEC5 /* DefaultCircularAnimation.swift in Sources */,
+				25B9DFA820C817C10068FEC5 /* UICircularViewControllerExtension.swift in Sources */,
+				25B9DFA920C817C10068FEC5 /* AnimationConfiguration.swift in Sources */,
+				25B9DFAA20C817C10068FEC5 /* PACameraPermissionsCheck.swift in Sources */,
+				25B9DFAB20C817C10068FEC5 /* NeonAnchorable.swift in Sources */,
+				25B9DFAC20C817C10068FEC5 /* PinCodeField.swift in Sources */,
+				25B9DFAD20C817C10068FEC5 /* NeonAlignable.swift in Sources */,
+				25B9DFAE20C817C10068FEC5 /* FlyoverAwesomePlace.swift in Sources */,
+				25B9DFAF20C817C10068FEC5 /* JJFloatingActionButtonState.swift in Sources */,
+				25B9DFB020C817C10068FEC5 /* PinViewController.swift in Sources */,
+				25B9DFB220C817C10068FEC5 /* Reachability.swift in Sources */,
+				25B9DFB320C817C10068FEC5 /* UICircularNavigationControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		250D2F4B2049709C00AACC49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250D2F4C2049709C00AACC49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		250D2F4F2049709C00AACC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		250D2F502049709C00AACC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		250D2F522049709C00AACC49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZVCU3V37N;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/Pixscape/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Pixscape/Supporting Files/Pixscape-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/pixscape/Frameworks/ScapeKit.framework/Modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scape.pixscapeprivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "55504cb5-82ff-4d52-b1e1-7ab321cff5fb";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		250D2F532049709C00AACC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZVCU3V37N;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/Pixscape/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Pixscape/Supporting Files/Pixscape-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/pixscape/Frameworks/ScapeKit.framework/Modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scape.pixscapeprivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "75ad30f2-ed26-4f08-b7f2-c46638369352";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25B9DFCA20C817C10068FEC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LZVCU3V37N;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/Pixscape/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Pixscape/Supporting Files/PixscapeDev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/pixscape/Frameworks/ScapeKit.framework/Modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scape.pixscapeprivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25B9DFCB20C817C10068FEC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZVCU3V37N;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/Pixscape/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Pixscape/Supporting Files/PixscapeDev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape/Frameworks",
+					"$(PROJECT_DIR)/pixscape/Frameworks/ScapeKit.framework/Modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scape.pixscapeprivate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		250D2F3A2049709C00AACC49 /* Build configuration list for PBXProject "Pixscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250D2F4F2049709C00AACC49 /* Debug */,
+				250D2F502049709C00AACC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250D2F512049709C00AACC49 /* Build configuration list for PBXNativeTarget "Pixscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250D2F522049709C00AACC49 /* Debug */,
+				250D2F532049709C00AACC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B9DFC920C817C10068FEC5 /* Build configuration list for PBXNativeTarget "PixscapeDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B9DFCA20C817C10068FEC5 /* Debug */,
+				25B9DFCB20C817C10068FEC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 250D2F372049709C00AACC49 /* Project object */;
+}
