@@ -10,3 +10,7 @@ The areas recognizable by Pixscape are currently limited to certain areas of Lon
 ![Pixscape in action](Screenshots/iphone2.PNG?raw=true "Pixscape in action")
 
 ![Pixscape in action](Screenshots/iphone3.PNG?raw=true "Pixscape in action")
+
+## Instructions
+
+Add your api key from developer.scape.io/account to the `SCKScapeClient` instance located in `AppDelegate.swift`.
