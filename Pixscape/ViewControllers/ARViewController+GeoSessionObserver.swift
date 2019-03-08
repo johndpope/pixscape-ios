@@ -15,8 +15,8 @@ extension ARViewController: SCKScapeSessionObserver {
         
         scapeState = .idle
         
-        DispatchQueue.main.async {
-            if(state == SCKScapeSessionState.lockingPositionError) {
+        DispatchQueue.main.async { [weak self] in
+            if(state == SCKScapeSessionState.lockingPositionError && self?.scapeMeasurementsStatus == SCKScapeMeasurementsStatus.unavailableArea) {
                 SwiftSpinner.sharedInstance.title = "Geoposition cannot be locked, service unavailable in this area"
             }
             else {
@@ -54,6 +54,8 @@ extension ARViewController: SCKScapeSessionObserver {
     }
     
     func onScapeMeasurementsUpdated(_ session: SCKScapeSession?, measurements: SCKScapeMeasurements?) {
+        scapeMeasurementsStatus = measurements?.measurementsStatus ?? SCKScapeMeasurementsStatus.noResults
+        
         if measurements?.measurementsStatus != SCKScapeMeasurementsStatus.resultsFound {
             return
         }

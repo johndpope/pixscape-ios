@@ -69,6 +69,7 @@ final class ARViewController: UIViewController {
     var isInit = false
     let network: NetworkManager = NetworkManager.sharedInstance
     var scapeState: ScapeState = .idle
+    var scapeMeasurementsStatus: SCKScapeMeasurementsStatus = SCKScapeMeasurementsStatus.noResults
     
     var scapeClient: SCKScapeClient
     

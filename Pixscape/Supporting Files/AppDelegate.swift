@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var scapeClient: SCKScapeClient = {
         return SCKScape.scapeClientBuilder
             .withDebugSupport(false)
-            .withApiKey("")
+            .withApiKey("cSW5DBzfQV5woaIPBkB3TaTUiBo3thUt387FKf5F")
             .withArSupport(true)
             .build()
     }()
@@ -34,12 +34,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        var initialVc: UIViewController
-        #if DEBUG
-        initialVc = ARViewController(scapeClient: scapeClient)
-        #else
-        initialVc = PinViewController(scapeClient: scapeClient)
-        #endif
+        let initialVc: UIViewController = ARViewController(scapeClient: scapeClient)
         
         let navController = UINavigationController(rootViewController: initialVc)
         navController.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -54,22 +49,15 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        if(scapeClient.isStarted) {
-            scapeClient.stop()
-        }
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        if(scapeClient.isStarted) {
-            scapeClient.stop()
-        }
+        scapeClient.stop()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        if(!scapeClient.isStarted) {
-            scapeClient.start()
-        }
+        scapeClient.start()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -93,18 +81,6 @@ extension AppDelegate: SCKScapeClientObserver {
     
     func onClientFailed(_ scapeClient: SCKScapeClient, errorMessage: String) {
         
-    }
-}
-
-func isAppAlreadyLaunchedOnce() -> Bool {
-    let defaults = UserDefaults.standard
-    if let _ = defaults.string(forKey: "isAppAlreadyLaunchedOnce"){
-        print("App already launched")
-        return true
-    } else {
-        defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
-        print("App launched first time")
-        return false
     }
 }
 
