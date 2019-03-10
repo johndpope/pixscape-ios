@@ -43,8 +43,6 @@
 		2536AEE82174D83F0029A6F6 /* ARViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536AEE62174D83F0029A6F6 /* ARViewController+Setup.swift */; };
 		2544098920C827D5008296A2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544098820C827D5008296A2 /* Device.swift */; };
 		2544098A20C827D5008296A2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544098820C827D5008296A2 /* Device.swift */; };
-		2565D23820C710530018F4BD /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF520BEC89100A4839D /* Fabric.framework */; };
-		2565D23920C710670018F4BD /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF420BEC89100A4839D /* Crashlytics.framework */; };
 		2568E7A320C69A1D009135EB /* PinCodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A220C69A1D009135EB /* PinCodeField.swift */; };
 		2568E7A720C6AAE4009135EB /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A620C6AAE4009135EB /* AppUtils.swift */; };
 		2568E7BC20C6C081009135EB /* Flyover+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7AF20C6C081009135EB /* Flyover+Operators.swift */; };
@@ -128,8 +126,6 @@
 		25B9DFAF20C817C10068FEC5 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDD20BD967100A4839D /* JJFloatingActionButtonState.swift */; };
 		25B9DFB220C817C10068FEC5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3376920C143690098C0BD /* Reachability.swift */; };
 		25B9DFB320C817C10068FEC5 /* UICircularNavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728E5209753CE0062B2A0 /* UICircularNavigationControllerExtension.swift */; };
-		25B9DFB520C817C10068FEC5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF420BEC89100A4839D /* Crashlytics.framework */; };
-		25B9DFB620C817C10068FEC5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25223FF520BEC89100A4839D /* Fabric.framework */; };
 		25B9DFB920C817C10068FEC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D728A320935DB20062B2A0 /* UIKit.framework */; };
 		25B9DFBA20C817C10068FEC5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7289C20933E5B0062B2A0 /* libz.tbd */; };
 		25B9DFBB20C817C10068FEC5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7289A20933E4F0062B2A0 /* libc++.tbd */; };
@@ -206,8 +202,6 @@
 		25223FE220BD967100A4839D /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButton.swift; sourceTree = "<group>"; };
 		25223FE320BD967100A4839D /* JJCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJCircleView.swift; sourceTree = "<group>"; };
 		25223FF220BEAA5D00A4839D /* GeoWayPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoWayPoint.swift; sourceTree = "<group>"; };
-		25223FF420BEC89100A4839D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Pixscape/Frameworks/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
-		25223FF520BEC89100A4839D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Pixscape/Frameworks/Fabric.framework; sourceTree = SOURCE_ROOT; };
 		25223FFD20BEDFEE00A4839D /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		25223FFF20BEE13300A4839D /* ScapePrivacy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ScapePrivacy.pdf; sourceTree = "<group>"; };
 		2522400820BEEC9400A4839D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -286,8 +280,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2565D23920C710670018F4BD /* Crashlytics.framework in Frameworks */,
-				2565D23820C710530018F4BD /* Fabric.framework in Frameworks */,
 				25D728A420935DB30062B2A0 /* UIKit.framework in Frameworks */,
 				25D7289D20933E5B0062B2A0 /* libz.tbd in Frameworks */,
 				25D7289B20933E4F0062B2A0 /* libc++.tbd in Frameworks */,
@@ -307,8 +299,6 @@
 				9E9B91812224489B003A7218 /* ScapeKit.framework in Frameworks */,
 				2536AEA0216CAFF10029A6F6 /* ARKit.framework in Frameworks */,
 				2536AE9E216CAFE70029A6F6 /* SceneKit.framework in Frameworks */,
-				25B9DFB520C817C10068FEC5 /* Crashlytics.framework in Frameworks */,
-				25B9DFB620C817C10068FEC5 /* Fabric.framework in Frameworks */,
 				25B9DFB920C817C10068FEC5 /* UIKit.framework in Frameworks */,
 				25B9DFBA20C817C10068FEC5 /* libz.tbd in Frameworks */,
 				25B9DFBB20C817C10068FEC5 /* libc++.tbd in Frameworks */,
@@ -512,8 +502,6 @@
 			isa = PBXGroup;
 			children = (
 				9E9B917E222447EE003A7218 /* ScapeKit.framework */,
-				25223FF420BEC89100A4839D /* Crashlytics.framework */,
-				25223FF520BEC89100A4839D /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
