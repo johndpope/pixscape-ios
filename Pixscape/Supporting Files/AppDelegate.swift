@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var scapeClient: SCKScapeClient = {
         return SCKScape.scapeClientBuilder
             .withDebugSupport(false)
-            .withApiKey("cSW5DBzfQV5woaIPBkB3TaTUiBo3thUt387FKf5F")
+            .withApiKey("")
             .withArSupport(true)
             .build()
     }()
