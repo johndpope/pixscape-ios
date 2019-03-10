@@ -40,18 +40,6 @@ extension MKMapItem: Flyover {
         return self.placemark.coordinate
     }
 }
-extension MKMapView: Flyover {
-    /// The flyover coordinate
-    public var coordinate: CLLocationCoordinate2D {
-        return self.centerCoordinate
-    }
-}
-extension MKMapPoint: Flyover {
-    /// The flyover coordinate
-    public var coordinate: CLLocationCoordinate2D {
-        return MKCoordinateForMapPoint(self)
-    }
-}
 extension MKCoordinateRegion: Flyover {
     /// The flyover coordinate
     public var coordinate: CLLocationCoordinate2D {

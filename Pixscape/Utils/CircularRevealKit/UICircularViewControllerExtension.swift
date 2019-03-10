@@ -51,7 +51,7 @@ public extension UIViewController {
   }
   
   func setupBackButton(title: String = "",
-                       style: UIBarButtonItemStyle = UIBarButtonItemStyle.plain) {
+                       style: UIBarButtonItem.Style = UIBarButtonItem.Style.plain) {
         navigationItem.hidesBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(
       title: title,

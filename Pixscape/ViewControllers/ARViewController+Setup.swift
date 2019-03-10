@@ -62,8 +62,8 @@ extension ARViewController {
     
     func setupAr() {
         arSession = scapeClient.arSession?.withArView(view: arView)
-        arSession!.setDebugMode(false)
-        arSession!.resetTracking()
+        arSession?.setDebugMode(false)
+        arSession?.resetTracking()
     }
     
     func setupGeo() {

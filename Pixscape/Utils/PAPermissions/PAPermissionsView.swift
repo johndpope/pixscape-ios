@@ -170,7 +170,7 @@ class PAPermissionsView: UIView, UITableViewDataSource, UITableViewDelegate {
 		set (use) {
 			if use {
 				if !self.useBlurBackground {
-					let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+                    let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
 					let blurEffectView = UIVisualEffectView(effect: blurEffect)
 					blurEffectView.frame = self.bounds
 					blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -315,7 +315,7 @@ class PAPermissionsView: UIView, UITableViewDataSource, UITableViewDelegate {
 			self.tableView.tableFooterView = UIView()
 			
 			let refreshControl = UIRefreshControl()
-			refreshControl.addTarget(self, action: #selector(PAPermissionsView.refresh(_:)), for: UIControlEvents.valueChanged)
+            refreshControl.addTarget(self, action: #selector(PAPermissionsView.refresh(_:)), for: UIControl.Event.valueChanged)
 			tableView.addSubview(refreshControl)
 			self.refreshControl = refreshControl
 		}
@@ -340,8 +340,8 @@ class PAPermissionsView: UIView, UITableViewDataSource, UITableViewDelegate {
 		}
 		self.continueButton.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 20)
 		self.continueButton.titleLabel?.minimumScaleFactor = 0.1
-		self.continueButton.setTitle(NSLocalizedString("Continue", comment: ""), for: UIControlState())
-		self.continueButton.setTitleColor(self.tintColor, for: UIControlState())
+        self.continueButton.setTitle(NSLocalizedString("Continue", comment: ""), for: UIControl.State())
+        self.continueButton.setTitleColor(self.tintColor, for: UIControl.State())
 		self.continueButton.backgroundColor = UIColor.clear
 	}
 	

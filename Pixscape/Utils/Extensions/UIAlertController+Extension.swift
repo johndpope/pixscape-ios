@@ -14,7 +14,7 @@ extension UIAlertController {
         
         let alert: UIAlertController = self.init(title: nil, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK",
-                                     style: UIAlertActionStyle.default,
+                                      style: UIAlertAction.Style.default,
                                      handler: { (alert: UIAlertAction!) in print("OK") }))
         
         DispatchQueue.main.async {

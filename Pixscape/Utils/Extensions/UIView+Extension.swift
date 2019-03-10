@@ -34,13 +34,13 @@ extension UIView {
         }
         switch animationType {
         case .linear:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         case .easeIn:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         case .easeOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         case .easeInOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         }
         CATransaction.setCompletionBlock(completion)
         animation.duration = duration
@@ -90,7 +90,7 @@ extension UIView {
         self.layer.addSublayer(frameLayer)
     }
     
-    func blur(style: UIBlurEffectStyle) {
+    func blur(style: UIBlurEffect.Style) {
         var blurEffectView = UIVisualEffectView()
         let blurEffect = UIBlurEffect(style: style)
         blurEffectView = UIVisualEffectView(effect: blurEffect)

@@ -58,7 +58,7 @@ public class SwiftSpinnerBlurred: UIView {
         outerCircle.lineWidth = 8.0
         outerCircle.strokeStart = 0.0
         outerCircle.strokeEnd = 0.45
-        outerCircle.lineCap = kCALineCapRound
+        outerCircle.lineCap = CAShapeLayerLineCap.round
         outerCircle.fillColor = UIColor.clear.cgColor
         outerCircle.strokeColor = outerCircleDefaultColor
         outerCircleView.layer.addSublayer(outerCircle)
@@ -75,7 +75,7 @@ public class SwiftSpinnerBlurred: UIView {
         innerCircle.lineWidth = 4.0
         innerCircle.strokeStart = 0.5
         innerCircle.strokeEnd = 0.9
-        innerCircle.lineCap = kCALineCapRound
+        innerCircle.lineCap = CAShapeLayerLineCap.round
         innerCircle.fillColor = UIColor.clear.cgColor
         innerCircle.strokeColor = innerCircleDefaultColor
         innerCircleView.layer.addSublayer(innerCircle)
@@ -177,7 +177,7 @@ public class SwiftSpinnerBlurred: UIView {
                 NotificationCenter.default.addObserver(
                     spinner,
                     selector: #selector(SwiftSpinnerBlurred.updateFrame),
-                    name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation,
+                    name: UIApplication.didChangeStatusBarOrientationNotification,
                     object: nil)
             #endif
         } else if spinner.dismissing {
@@ -423,7 +423,7 @@ public class SwiftSpinnerBlurred: UIView {
     // Layout elements
     //
    
-    private var blurEffectStyle: UIBlurEffectStyle = .light
+    private var blurEffectStyle: UIBlurEffect.Style = .light
     private var blurEffect: UIBlurEffect!
     private var blurView: UIVisualEffectView!
     private var vibrancyView: UIVisualEffectView!
@@ -493,7 +493,7 @@ public class SwiftSpinnerBlurred: UIView {
     @objc public func updateFrame() {
         if let containerView = SwiftSpinnerBlurred.containerView() {
             SwiftSpinnerBlurred.sharedInstance.frame = containerView.bounds
-            containerView.bringSubview(toFront: SwiftSpinnerBlurred.sharedInstance)
+            containerView.bringSubviewToFront(SwiftSpinnerBlurred.sharedInstance)
         }
     }
    

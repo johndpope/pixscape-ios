@@ -23,14 +23,23 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        scapeClient.scapeClientObserver = self
-        scapeClient.start()
+        scapeClient.start(clientStarted: {
+                            print("ScapeClient started properly")
+        },
+                          clientFailed: { errorMessage in
+                            print("ScapeClient failed with error: \(errorMessage)")
+        })
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let initialVc: UIViewController = ARViewController(scapeClient: scapeClient)
+        var initialVc: UIViewController
+        if(isAppAlreadyLaunchedOnce()) {
+            initialVc = ARViewController(scapeClient: scapeClient)
+        } else {
+            initialVc = PermissionsViewController(scapeClient: scapeClient)
+        }
         
         let navController = UINavigationController(rootViewController: initialVc)
         navController.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -52,31 +61,30 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        scapeClient.start()
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        scapeClient.start(clientStarted: {
+                            print("ScapeClient started properly")
+        },
+                          clientFailed: { errorMessage in
+                            print("ScapeClient failed with error: \(errorMessage)")
+        })
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         scapeClient.terminate()
     }
 }
 
-extension AppDelegate: SCKScapeClientObserver {
-    func onClientStarted(_ scapeClient: SCKScapeClient) {
-        
-    }
-    
-    func onClientStopped(_ scapeClient: SCKScapeClient) {
-        
-    }
-    
-    func onClientFailed(_ scapeClient: SCKScapeClient, errorMessage: String) {
-        
+private extension AppDelegate {
+    func isAppAlreadyLaunchedOnce() -> Bool {
+        let defaults = UserDefaults.standard
+        if let _ = defaults.string(forKey: "AppAlreadyLaunchedOnce"){
+            print("App already launched")
+            return true
+        } else {
+            defaults.set(true, forKey: "AppAlreadyLaunchedOnce")
+            print("App launched for the first time")
+            return false
+        }
     }
 }
 

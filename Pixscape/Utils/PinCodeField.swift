@@ -160,12 +160,11 @@ open class PinCodeField: UIControl, UITextInputTraits {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
 
-        let attrs: [NSAttributedStringKey : Any] = [
-            NSAttributedStringKey.font: self.lettersFont,
-            NSAttributedStringKey.paragraphStyle: paragraphStyle,
-            NSAttributedStringKey.foregroundColor: self.lettersColor
+        let attrs: [NSAttributedString.Key : Any] = [
+            NSAttributedString.Key.font: self.lettersFont,
+            NSAttributedString.Key.paragraphStyle: paragraphStyle,
+            NSAttributedString.Key.foregroundColor: self.lettersColor
         ]
-
 
         // Draw circles
         var origin = CGPoint.zero

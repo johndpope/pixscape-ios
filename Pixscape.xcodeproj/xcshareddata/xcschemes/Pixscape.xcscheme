@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "25B9DF6820C817C10068FEC5"
-               BuildableName = "PixscapeDev.app"
-               BlueprintName = "PixscapeDev"
+               BuildableName = "Pixscape.app"
+               BlueprintName = "Pixscape"
                ReferencedContainer = "container:Pixscape.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25B9DF6820C817C10068FEC5"
-            BuildableName = "PixscapeDev.app"
-            BlueprintName = "PixscapeDev"
+            BuildableName = "Pixscape.app"
+            BlueprintName = "Pixscape"
             ReferencedContainer = "container:Pixscape.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25B9DF6820C817C10068FEC5"
-            BuildableName = "PixscapeDev.app"
-            BlueprintName = "PixscapeDev"
+            BuildableName = "Pixscape.app"
+            BlueprintName = "Pixscape"
             ReferencedContainer = "container:Pixscape.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25B9DF6820C817C10068FEC5"
-            BuildableName = "PixscapeDev.app"
-            BlueprintName = "PixscapeDev"
+            BuildableName = "Pixscape.app"
+            BlueprintName = "Pixscape"
             ReferencedContainer = "container:Pixscape.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
