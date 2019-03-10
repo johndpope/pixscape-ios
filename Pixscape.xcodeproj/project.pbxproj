@@ -628,7 +628,6 @@
 				25B9DFB420C817C10068FEC5 /* Frameworks */,
 				25B9DFC220C817C10068FEC5 /* Resources */,
 				25B9DFC720C817C10068FEC5 /* Headers */,
-				25B9DFC820C817C10068FEC5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -702,19 +701,6 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		25223FFC20BEC93D00A4839D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/Pixscape/Frameworks/Fabric.framework/run\" a0eb68f411a9f26fa3a3cd65029fd62264e3a7bc 3f9a080025575f0f9886b0f1956c8e29246bc0aff02d7beb7f8ab6bc2a123a56";
-		};
-		25B9DFC820C817C10068FEC5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

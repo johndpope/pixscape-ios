@@ -8,8 +8,6 @@
 
 import UIKit
 import ScapeKit
-import Fabric
-import Crashlytics
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
