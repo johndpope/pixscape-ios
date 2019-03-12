@@ -75,7 +75,6 @@
 		25B9DFA920C817C10068FEC5 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDB20BD967100A4839D /* AnimationConfiguration.swift */; };
 		25B9DFAA20C817C10068FEC5 /* PACameraPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3375420C037AA0098C0BD /* PACameraPermissionsCheck.swift */; };
 		25B9DFAB20C817C10068FEC5 /* NeonAnchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C32097496B0062B2A0 /* NeonAnchorable.swift */; };
-		25B9DFAC20C817C10068FEC5 /* PinCodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7A220C69A1D009135EB /* PinCodeField.swift */; };
 		25B9DFAD20C817C10068FEC5 /* NeonAlignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D728C42097496B0062B2A0 /* NeonAlignable.swift */; };
 		25B9DFAE20C817C10068FEC5 /* FlyoverAwesomePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568E7B720C6C081009135EB /* FlyoverAwesomePlace.swift */; };
 		25B9DFAF20C817C10068FEC5 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25223FDD20BD967100A4839D /* JJFloatingActionButtonState.swift */; };
@@ -129,7 +128,6 @@
 		2536AEE32174D7DF0029A6F6 /* ARViewController+MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+MapViewDelegate.swift"; sourceTree = "<group>"; };
 		2536AEE62174D83F0029A6F6 /* ARViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARViewController+Setup.swift"; sourceTree = "<group>"; };
 		2544098820C827D5008296A2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		2568E7A220C69A1D009135EB /* PinCodeField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeField.swift; sourceTree = "<group>"; };
 		2568E7A620C6AAE4009135EB /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		2568E7AF20C6C081009135EB /* Flyover+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flyover+Operators.swift"; sourceTree = "<group>"; };
 		2568E7B120C6C081009135EB /* FlyoverCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyoverCamera.swift; sourceTree = "<group>"; };
@@ -279,7 +277,6 @@
 				25223FC020BD706900A4839D /* SwiftSpinner.swift */,
 				25C3377020C1542F0098C0BD /* SwiftSpinnerBlurred.swift */,
 				25C3376B20C143C20098C0BD /* NetworkManager.swift */,
-				2568E7A220C69A1D009135EB /* PinCodeField.swift */,
 				2568E7A620C6AAE4009135EB /* AppUtils.swift */,
 			);
 			path = Utils;
@@ -627,7 +624,6 @@
 				25B9DFA920C817C10068FEC5 /* AnimationConfiguration.swift in Sources */,
 				25B9DFAA20C817C10068FEC5 /* PACameraPermissionsCheck.swift in Sources */,
 				25B9DFAB20C817C10068FEC5 /* NeonAnchorable.swift in Sources */,
-				25B9DFAC20C817C10068FEC5 /* PinCodeField.swift in Sources */,
 				25B9DFAD20C817C10068FEC5 /* NeonAlignable.swift in Sources */,
 				25B9DFAE20C817C10068FEC5 /* FlyoverAwesomePlace.swift in Sources */,
 				25B9DFAF20C817C10068FEC5 /* JJFloatingActionButtonState.swift in Sources */,

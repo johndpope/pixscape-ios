@@ -87,7 +87,6 @@ final class ARViewController: UIViewController {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
 
         NetworkManager.isUnreachable(completed: { [weak self] _ in
             self?.scapeState = .offline
@@ -140,10 +139,6 @@ final class ARViewController: UIViewController {
     
     @objc func didBecomeActive() {
         arSession?.resetTracking()
-    }
-    
-    @objc func willEnterForeground() {
-        
     }
 }
 
